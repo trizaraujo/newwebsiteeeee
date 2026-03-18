@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Para você ❤️</title>
+
+    <style>
+        body {
+            background-color: #ffe6f0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #ff4d88;
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 20px;
+            color: #333;
+        }
+
+        button {
+            background-color: #ff4d88;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #e6005c;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Oi, meu amor ❤️</h1>
+
+    <p>
+        Eu fiz esse site só pra te lembrar o quanto você é importante pra mim.
+    </p>
+
+    <p>
+        Você é a melhor parte dos meus dias 💕
+    </p>
+
+    <button onclick="mostrarMensagem()">Clica aqui 😏</button>
+
+    <p id="mensagem"></p>
+
+    <img id="foto" src="" style="display:none; width:250px; margin-top:20px; border-radius:15px;">
+
+    <script>
+        function mostrarMensagem() {
+            document.getElementById("mensagem").innerHTML =
+                "Eu te amo muito ❤️ (agora me dá um beijo 😡💋)";
+
+            document.getElementById("foto").src = "foto.jpg";
+            document.getElementById("foto").style.display = "block";
+        }
+    </script>
+
+</body>
+
+</html>
